@@ -1,4 +1,16 @@
 
+TO-DO:
+
+Reroute the RP2040  
+
+Add Flash For RP2040
+
+Add and Route Capacitors for RP2040
+
+
+
+
+
 Photo's of the PCB;
 
 <img width="620" height="610" alt="{C5429058-1876-41F4-9D27-B506D422D34C}" src="https://github.com/user-attachments/assets/37f0c413-7f77-4ab2-8719-460b25b4fc4d" />
