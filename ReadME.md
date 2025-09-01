@@ -36,15 +36,14 @@ DDR4 SO-DIMM Slot for Lattepanda MU (Many options to choose from)
 
 Uses Nano-ITX Standard
 
-12v USB-C PD Input:
-
-Requires a charger that supports 12V like the one below
-
-https://slimq.life/products/65w-color-usb-c-gan-charger
+20v USB-C PD Input.
 
 Dual Bios to switch between MU Bios and OpeNVR Bios
 
-6x Sata Ports instead of 4 (2 Sata ports will remain unpopulated however they will be connected to the IC incase you want to add more ports)
+6x Sata Ports instead of 4 
+
+
+* 2 Sata ports will remain unpopulated however they will be connected to the IC incase you want to add more ports
 
 Sata Ports LED (Once again optional)
 
