@@ -827,10 +827,6 @@
     [
       "3a597c52-640b-4e4c-bb57-6eff9e8fff95",
       "Fan_Temp"
-    ],
-    [
-      "bf8f5274-9226-4165-83e7-9ee88bf89904",
-      "Secure Enclave"
     ]
   ],
   "text_variables": {}

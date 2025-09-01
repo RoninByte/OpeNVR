@@ -6731,6 +6731,10 @@
 		(uuid "127229bc-9e0f-48d7-9371-fda260d52c5a")
 	)
 	(no_connect
+		(at 351.79 218.44)
+		(uuid "1445474a-dacb-4aeb-9470-4277e71c40da")
+	)
+	(no_connect
 		(at 270.51 252.73)
 		(uuid "17b3e800-3ae1-45eb-a119-17a5949efdde")
 	)
@@ -6809,6 +6813,10 @@
 	(no_connect
 		(at 351.79 312.42)
 		(uuid "4f8d4e9e-2f79-4c21-b37b-59996468d869")
+	)
+	(no_connect
+		(at 351.79 215.9)
+		(uuid "4fd64d69-469e-4140-bd8e-85afd4a32896")
 	)
 	(no_connect
 		(at 270.51 269.24)
@@ -7396,16 +7404,6 @@
 	)
 	(wire
 		(pts
-			(xy 351.79 218.44) (xy 360.68 218.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4e9857d9-a95c-4248-8b04-6bf2098b083e")
-	)
-	(wire
-		(pts
 			(xy 373.38 274.32) (xy 373.38 276.86)
 		)
 		(stroke
@@ -7933,16 +7931,6 @@
 			(type default)
 		)
 		(uuid "c72b1381-0edd-45d3-89a3-cc54bd56aa02")
-	)
-	(wire
-		(pts
-			(xy 351.79 215.9) (xy 360.68 215.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c7690d77-60c4-4c28-8069-34f7f151c191")
 	)
 	(wire
 		(pts
@@ -8501,17 +8489,6 @@
 		)
 		(uuid "4a06b01f-7516-485a-a251-458aad68e029")
 	)
-	(hierarchical_label "I2C_SDA_2"
-		(shape bidirectional)
-		(at 360.68 215.9 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4a0fccdd-4c14-4844-9dad-61633ba3dc66")
-	)
 	(hierarchical_label "SPI_CLK"
 		(shape output)
 		(at 368.3 238.76 0)
@@ -8720,17 +8697,6 @@
 			(justify left)
 		)
 		(uuid "8c2a1342-27ca-4164-9955-824b65b29e12")
-	)
-	(hierarchical_label "I2C_SCL_2"
-		(shape output)
-		(at 360.68 218.44 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8d6ee68a-a4ba-43a9-a323-5fd818fd860a")
 	)
 	(hierarchical_label "USB_2_P2+"
 		(shape bidirectional)

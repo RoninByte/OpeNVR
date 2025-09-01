@@ -418,16 +418,6 @@
 	)
 	(wire
 		(pts
-			(xy 341.63 154.94) (xy 363.22 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "26a430b9-c97a-41ed-9dee-e7683b665c1f")
-	)
-	(wire
-		(pts
 			(xy 194.31 297.18) (xy 227.33 297.18)
 		)
 		(stroke
@@ -575,16 +565,6 @@
 			(type default)
 		)
 		(uuid "4f3dc1c9-860e-4e35-8e6e-41b6663febe1")
-	)
-	(wire
-		(pts
-			(xy 341.63 152.4) (xy 363.22 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5043717e-b87c-4294-bb9a-f87766be5992")
 	)
 	(wire
 		(pts
@@ -3301,26 +3281,6 @@
 				(justify right)
 			)
 		)
-		(pin "I2C_SDA_2" bidirectional
-			(at 341.63 154.94 0)
-			(uuid "5fcc45ca-bb5c-43bd-972d-6c45e07bdbcd")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "I2C_SCL_2" output
-			(at 341.63 152.4 0)
-			(uuid "e8b9cac1-403d-4a91-ad99-876b63ecd9f1")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "SPI-CS" bidirectional
 			(at 227.33 156.21 180)
 			(uuid "4e3e143e-fef4-4fb7-acf0-f775b05e81c5")
@@ -3679,76 +3639,6 @@
 			(project "NVR"
 				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa"
 					(page "9")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 363.22 146.05)
-		(size 27.94 17.78)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "bf8f5274-9226-4165-83e7-9ee88bf89904")
-		(property "Sheetname" "Secure Enclave"
-			(at 363.22 145.3384 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Security.kicad_sch"
-			(at 363.22 164.4146 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Field2" ""
-			(at 363.22 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "I2C_SCL_2" input
-			(at 363.22 152.4 180)
-			(uuid "673de0d2-9551-4987-abb8-5a5d59d15653")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "I2C_SDA_2" bidirectional
-			(at 363.22 154.94 180)
-			(uuid "e3268ba7-456f-40e1-b18d-f9faf909e700")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(instances
-			(project "NVR"
-				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa"
-					(page "11")
 				)
 			)
 		)
