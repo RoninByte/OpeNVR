@@ -7489,7 +7489,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "11d46351-3ddd-4e11-938a-bae8de36fb22")
 		(property "Reference" "C61"
 			(at 114.3 284.48 90)
@@ -7500,7 +7499,7 @@
 			)
 		)
 		(property "Value" "100nF/50v"
-			(at 116.84 284.48 90)
+			(at 118.11 289.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
