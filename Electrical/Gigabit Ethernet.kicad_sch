@@ -6676,7 +6676,7 @@
 		(uuid "f1220c01-600a-46e8-8024-aca729a8a6bc")
 	)
 	(hierarchical_label "GbE_PCIe_1_RX-"
-		(shape input)
+		(shape output)
 		(at 374.65 260.35 180)
 		(effects
 			(font
@@ -6731,7 +6731,7 @@
 		(uuid "51a68714-2345-4e2d-bfd8-d35c46102ecb")
 	)
 	(hierarchical_label "GbE_PCIe_0_TX-"
-		(shape output)
+		(shape input)
 		(at 142.24 269.24 180)
 		(effects
 			(font
@@ -6742,7 +6742,7 @@
 		(uuid "5532946c-20e5-449a-8922-68d5b6984be6")
 	)
 	(hierarchical_label "GbE_PCIe_1_RX+"
-		(shape input)
+		(shape output)
 		(at 374.65 255.27 180)
 		(effects
 			(font
@@ -6753,7 +6753,7 @@
 		(uuid "5abfa2dc-2007-4c00-8def-8d8f47d57b09")
 	)
 	(hierarchical_label "GbE_PCIe_0_RX-"
-		(shape input)
+		(shape output)
 		(at 142.24 261.62 180)
 		(effects
 			(font
@@ -6764,7 +6764,7 @@
 		(uuid "67101cc9-456b-4ee3-a65b-7732539bc040")
 	)
 	(hierarchical_label "GbE_PCIe_1_TX-"
-		(shape output)
+		(shape input)
 		(at 378.46 267.97 180)
 		(effects
 			(font
@@ -6786,7 +6786,7 @@
 		(uuid "8b7c9cd5-aaa3-4417-a526-ae584bc6b2b3")
 	)
 	(hierarchical_label "GbE_PCIe_0_RX+"
-		(shape input)
+		(shape output)
 		(at 134.62 256.54 180)
 		(effects
 			(font
@@ -6808,7 +6808,7 @@
 		(uuid "8dc063a5-b899-441b-959e-1eca4cb973ef")
 	)
 	(hierarchical_label "GbE_PCIe_0_TX+"
-		(shape output)
+		(shape input)
 		(at 142.24 266.7 180)
 		(effects
 			(font
@@ -6819,7 +6819,7 @@
 		(uuid "8fb290c4-5f3a-42d1-ac65-83cad7ea36d6")
 	)
 	(hierarchical_label "GbE_PCIe_1_TX+"
-		(shape output)
+		(shape input)
 		(at 378.46 265.43 180)
 		(effects
 			(font
@@ -6847,7 +6847,7 @@
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF/50v"
 			(at 392.43 250.19 90)
 			(effects
 				(font
@@ -7231,7 +7231,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF/50v"
 			(at 455.93 232.4099 0)
 			(effects
 				(font
@@ -7499,7 +7499,7 @@
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF/50v"
 			(at 116.84 284.48 90)
 			(effects
 				(font
@@ -7803,7 +7803,7 @@
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF/50v"
 			(at 123.19 284.48 90)
 			(effects
 				(font
@@ -7938,7 +7938,7 @@
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF/50v"
 			(at 482.6 294.64 90)
 			(effects
 				(font
@@ -8006,7 +8006,7 @@
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF/50v"
 			(at 388.62 260.35 90)
 			(effects
 				(font
@@ -8139,7 +8139,7 @@
 				)
 			)
 		)
-		(property "Value" "10uF/10V"
+		(property "Value" "100nF/50v"
 			(at 393.7 290.83 90)
 			(effects
 				(font
@@ -8310,7 +8310,7 @@
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF/50v"
 			(at 156.21 251.46 90)
 			(effects
 				(font
@@ -9125,7 +9125,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF/50v"
 			(at 205.74 217.17 90)
 			(effects
 				(font
@@ -9585,7 +9585,7 @@
 				)
 			)
 		)
-		(property "Value" "10uF/10V"
+		(property "Value" "100nF/50v"
 			(at 152.4 292.1 90)
 			(effects
 				(font
@@ -9964,7 +9964,7 @@
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF/50v"
 			(at 205.74 228.6 90)
 			(effects
 				(font
@@ -10234,7 +10234,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF/50v"
 			(at 441.96 215.9 90)
 			(effects
 				(font
@@ -10567,7 +10567,7 @@
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF/50v"
 			(at 394.97 262.89 90)
 			(effects
 				(font
@@ -11247,7 +11247,7 @@
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF/50v"
 			(at 359.41 283.21 90)
 			(effects
 				(font
@@ -11314,7 +11314,7 @@
 				)
 			)
 		)
-		(property "Value" "10uF/10V"
+		(property "Value" "100nF/50v"
 			(at 157.48 292.1 90)
 			(effects
 				(font
@@ -11523,7 +11523,7 @@
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF/50v"
 			(at 353.06 283.21 90)
 			(effects
 				(font
@@ -11763,7 +11763,7 @@
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF/50v"
 			(at 160.02 256.54 90)
 			(effects
 				(font
@@ -11831,7 +11831,7 @@
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF/50v"
 			(at 158.75 264.16 90)
 			(effects
 				(font
@@ -11898,7 +11898,7 @@
 				)
 			)
 		)
-		(property "Value" "10uF/10V"
+		(property "Value" "100nF/50v"
 			(at 477.52 257.81 90)
 			(effects
 				(font
@@ -12173,7 +12173,7 @@
 				)
 			)
 		)
-		(property "Value" "10uF/10V"
+		(property "Value" "100nF/50v"
 			(at 241.3 259.08 90)
 			(effects
 				(font
@@ -12277,7 +12277,7 @@
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF/50v"
 			(at 205.74 223.52 90)
 			(effects
 				(font
@@ -12344,7 +12344,7 @@
 				)
 			)
 		)
-		(property "Value" "10uF/10V"
+		(property "Value" "100nF/50v"
 			(at 388.62 290.83 90)
 			(effects
 				(font
@@ -12658,7 +12658,7 @@
 				)
 			)
 		)
-		(property "Value" "10uF/10V"
+		(property "Value" "100nF/50v"
 			(at 246.38 259.08 90)
 			(effects
 				(font
@@ -12933,7 +12933,7 @@
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF/50v"
 			(at 246.38 295.91 90)
 			(effects
 				(font
@@ -13067,7 +13067,7 @@
 				)
 			)
 		)
-		(property "Value" "10uF/10V"
+		(property "Value" "100nF/50v"
 			(at 440.69 314.96 90)
 			(effects
 				(font
@@ -13447,7 +13447,7 @@
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF/50v"
 			(at 482.6 288.29 90)
 			(effects
 				(font
@@ -13618,7 +13618,7 @@
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF/50v"
 			(at 246.38 289.56 90)
 			(effects
 				(font
@@ -13753,7 +13753,7 @@
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF/50v"
 			(at 396.24 255.27 90)
 			(effects
 				(font
@@ -13820,7 +13820,7 @@
 				)
 			)
 		)
-		(property "Value" "10uF/10V"
+		(property "Value" "100nF/50v"
 			(at 485.648 250.952 90)
 			(effects
 				(font
@@ -13924,7 +13924,7 @@
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF/50v"
 			(at 152.4 261.62 90)
 			(effects
 				(font
@@ -13993,7 +13993,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF/50v"
 			(at 219.71 233.6799 0)
 			(effects
 				(font
@@ -14062,7 +14062,7 @@
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF/50v"
 			(at 441.96 227.33 90)
 			(effects
 				(font
@@ -14130,7 +14130,7 @@
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF/50v"
 			(at 441.96 222.25 90)
 			(effects
 				(font
@@ -14197,7 +14197,7 @@
 				)
 			)
 		)
-		(property "Value" "10uF/10V"
+		(property "Value" "100nF/50v"
 			(at 435.61 314.96 90)
 			(effects
 				(font

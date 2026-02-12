@@ -6086,7 +6086,7 @@
 		)
 		(uuid "436b7114-d829-4bd6-b7ae-d876b953e9c2")
 	)
-	(text "CH224Q get DC 20V power from USB-PD adapter"
+	(text "CH224Q get DC 28V power from USB-PD adapter"
 		(exclude_from_sim no)
 		(at 289.56 289.56 0)
 		(effects
