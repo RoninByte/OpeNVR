@@ -1,5 +1,7 @@
 (fp_lib_table
-  (version 7)
-  (lib (name "M.2")(type "KiCad")(uri "/home/ronin/Downloads/nvme-Carrier-for-LattePanda-Mu-main/PCB/4 Layer nvme Carrier all M2/A_HDJ_Library.pretty")(options "")(descr ""))
-  (lib (name "molex")(type "KiCad")(uri "/home/ronin/Pictures/LIB_53261-0271/53261-0271/KiCad")(options "")(descr ""))
+	(version 7)
+	(lib (name "M.2") (type "KiCad") (uri "/home/ronin/Downloads/nvme-Carrier-for-LattePanda-Mu-main/PCB/4 Layer nvme Carrier all M2/A_HDJ_Library.pretty") (options "") (descr ""))
+	(lib (name "molex") (type "KiCad") (uri "/home/ronin/Pictures/LIB_53261-0271/53261-0271/KiCad") (options "") (descr ""))
+	(lib (name "ethernet") (type "KiCad") (uri "/home/ronin/Downloads/LIB_43860-0010/43860-0010/KiCad") (options "") (descr ""))
+	(lib (name "inductor") (type "KiCad") (uri "/home/ronin/Downloads/LIB_ETQ-P3M1R0KVP/ETQ-P3M1R0KVP/KiCad") (options "") (descr ""))
 )
