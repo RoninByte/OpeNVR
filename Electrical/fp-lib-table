@@ -4,4 +4,6 @@
 	(lib (name "molex") (type "KiCad") (uri "/home/ronin/Pictures/LIB_53261-0271/53261-0271/KiCad") (options "") (descr ""))
 	(lib (name "ethernet") (type "KiCad") (uri "/home/ronin/Downloads/LIB_43860-0010/43860-0010/KiCad") (options "") (descr ""))
 	(lib (name "inductor") (type "KiCad") (uri "/home/ronin/Downloads/LIB_ETQ-P3M1R0KVP/ETQ-P3M1R0KVP/KiCad") (options "") (descr ""))
+	(lib (name "inductor-2") (type "KiCad") (uri "C:/Users/Sayf/Downloads/LIB_SPM4020T-2R2M-LR/SPM4020T-2R2M-LR/KiCad") (options "") (descr ""))
+	(lib (name "ddr slot") (type "KiCad") (uri "C:/Users/Sayf/Downloads/2309413_1/KiCADv6/footprints.pretty") (options "") (descr ""))
 )

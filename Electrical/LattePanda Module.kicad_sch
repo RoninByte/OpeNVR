@@ -9450,7 +9450,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Module_LattePanda:LattePanda_Module_H8.0mm_Horizontal"
+		(property "Footprint" "ddr slot:CONN260_2309413-1_TEC"
 			(at 311.15 180.34 0)
 			(hide yes)
 			(show_name no)

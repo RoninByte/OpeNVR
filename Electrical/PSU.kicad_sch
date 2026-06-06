@@ -15603,7 +15603,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-923"
 			(at 458.47 228.6 0)
 			(hide yes)
 			(show_name no)
@@ -23252,7 +23252,7 @@
 				)
 			)
 		)
-		(property "Footprint" "A_HDJ_Library:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 445.4652 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -24046,7 +24046,7 @@
 				)
 			)
 		)
-		(property "Footprint" "A_HDJ_Library:L_Sunlord_SWPA4020S"
+		(property "Footprint" "inductor-2:SPM4010-4020"
 			(at 299.72 350.52 0)
 			(hide yes)
 			(show_name no)
@@ -25295,7 +25295,7 @@
 				)
 			)
 		)
-		(property "Footprint" "A_HDJ_Library:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 435.3052 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -25497,7 +25497,7 @@
 				)
 			)
 		)
-		(property "Footprint" "A_HDJ_Library:L_Sunlord_SWPA4020S"
+		(property "Footprint" "inductor-2:SPM4010-4020"
 			(at 314.96 229.87 0)
 			(hide yes)
 			(show_name no)
@@ -27608,7 +27608,7 @@
 				)
 			)
 		)
-		(property "Footprint" "A_HDJ_Library:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 440.3852 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -28184,7 +28184,7 @@
 				)
 			)
 		)
-		(property "Footprint" "A_HDJ_Library:L_Sunlord_SWPA4020S"
+		(property "Footprint" "inductor-2:SPM4010-4020"
 			(at 501.65 278.13 0)
 			(hide yes)
 			(show_name no)
@@ -28308,7 +28308,7 @@
 				)
 			)
 		)
-		(property "Footprint" "A_HDJ_Library:L_Sunlord_SWPA4020S"
+		(property "Footprint" "inductor-2:SPM4010-4020"
 			(at 501.65 240.03 0)
 			(hide yes)
 			(show_name no)
@@ -29270,7 +29270,7 @@
 				)
 			)
 		)
-		(property "Footprint" "A_HDJ_Library:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 450.5452 176.53 0)
 			(hide yes)
 			(show_name no)
