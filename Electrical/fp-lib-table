@@ -6,4 +6,7 @@
 	(lib (name "inductor") (type "KiCad") (uri "/home/ronin/Downloads/LIB_ETQ-P3M1R0KVP/ETQ-P3M1R0KVP/KiCad") (options "") (descr ""))
 	(lib (name "inductor-2") (type "KiCad") (uri "C:/Users/Sayf/Downloads/LIB_SPM4020T-2R2M-LR/SPM4020T-2R2M-LR/KiCad") (options "") (descr ""))
 	(lib (name "ddr slot") (type "KiCad") (uri "C:/Users/Sayf/Downloads/2309413_1/KiCADv6/footprints.pretty") (options "") (descr ""))
+	(lib (name "10g ethernet") (type "KiCad") (uri "C:/Users/Sayf/Downloads/RJE3C1881412") (options "") (descr ""))
+	(lib (name "phoenix ethernet") (type "KiCad") (uri "C:/Users/Sayf/Downloads/1099280") (options "") (descr ""))
+	(lib (name "amp eth") (type "KiCad") (uri "C:/Users/Sayf/Downloads/RJE3C1886401") (options "") (descr ""))
 )
