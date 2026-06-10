@@ -1,12 +1,15 @@
 Photo's of the PCB;
 
-<img width="1171" height="1160" alt="image" src="https://github.com/user-attachments/assets/1801e8d2-5a03-4772-9eaf-d646d07f74eb" />
+<img width="620" height="620" alt="image" src="https://github.com/user-attachments/assets/ef9ef2c2-6504-48b0-8865-1bf7da10eb12" />
+
+
+<img width="620" height="620" alt="image" src="https://github.com/user-attachments/assets/1801e8d2-5a03-4772-9eaf-d646d07f74eb" />
 
 
 
 
 
-<img width="1266" height="1216" alt="image" src="https://github.com/user-attachments/assets/befa56a8-85da-49b6-a7fd-ed4d9ac739d6" />
+<img width="620" height="620" alt="image" src="https://github.com/user-attachments/assets/befa56a8-85da-49b6-a7fd-ed4d9ac739d6" />
 
 
 
