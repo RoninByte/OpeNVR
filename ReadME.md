@@ -61,4 +61,4 @@ EShark
 
 WifiCable for improvements and fixes
 
-Lattepanda Team For Funding and Lattepanda MU Lite Kit
+Lattepanda Team For Lattepanda MU Lite Kit
