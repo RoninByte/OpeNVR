@@ -1,3 +1,5 @@
+BOARD STATUS: In Production
+
 Photo's of the PCB;
 
 <img width="620" height="620" alt="image" src="https://github.com/user-attachments/assets/ef9ef2c2-6504-48b0-8865-1bf7da10eb12" />
