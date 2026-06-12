@@ -25,8 +25,6 @@ E-Key M.2 PCIe Gen 3 X1 Slot
 
 2x 2.5GBe Ethernet Ports (Realtek's RTL8125BG-CG)
 
-PCIe upto 6x* Sata (ASMedia ASM1166)
-
 4x Molex Mini-Fit Jr for powering upto 3.5" Sata drives
 
 5v Fan header for the built in fan on the Lattepanda MU
@@ -45,10 +43,9 @@ Uses Nano-ITX Standard
 
 20v USB-C PD Input.
 
-Dual Bios to switch between MU Bios and OpeNVR Bios
+Dual Bios to switch between MU Bios and Your own Custom Bios
 
-6x Sata Ports instead of 4 
-
+6x Sata Ports (ASM1166)
 
 * 2 Sata ports will remain unpopulated however they will be connected to the IC incase you want to add more ports
 
