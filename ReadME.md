@@ -31,9 +31,9 @@ E-Key M.2 PCIe Gen 3 X1 Slot
 
 12v Fan Header for a system fan
 
-HDMI 2.0
+HDMI 2.1
 
-2x USB 3.0
+2x USB 3.2 Gen 2
 
 2x USB 2.0
 
