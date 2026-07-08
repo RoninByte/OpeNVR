@@ -9,4 +9,7 @@
 	(lib (name "10g ethernet") (type "KiCad") (uri "C:/Users/Sayf/Downloads/RJE3C1881412") (options "") (descr ""))
 	(lib (name "phoenix ethernet") (type "KiCad") (uri "C:/Users/Sayf/Downloads/1099280") (options "") (descr ""))
 	(lib (name "amp eth") (type "KiCad") (uri "C:/Users/Sayf/Downloads/RJE3C1886401") (options "") (descr ""))
+	(lib (name "eth transformer") (type "KiCad") (uri "C:/Users/Sayf/Downloads/New folder/KiCad") (options "") (descr ""))
+	(lib (name "new eth") (type "KiCad") (uri "C:/Users/Sayf/Downloads/new eth/KiCad") (options "") (descr ""))
+	(lib (name "mag eth") (type "KiCad") (uri "C:/Users/Sayf/Downloads/KiCADv6/footprints.pretty") (options "") (descr ""))
 )

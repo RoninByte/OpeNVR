@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.65,
-          "height": 2.15,
-          "width": 2.15
+          "drill": 1.7018,
+          "height": 2.2098,
+          "width": 2.2098
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -63,7 +63,7 @@
           "min_clearance": 0.2,
           "min_island_area": 10.0,
           "min_thickness": 0.2,
-          "pad_connection": 3,
+          "pad_connection": 2,
           "remove_islands": 0,
           "thermal_relief_gap": 0.5,
           "thermal_relief_spoke_width": 0.5
@@ -676,6 +676,10 @@
       {
         "netclass": "100Ω",
         "pattern": "*SATA/TX*_**"
+      },
+      {
+        "netclass": "100Ω",
+        "pattern": "P_GND"
       }
     ]
   },
@@ -843,7 +847,7 @@
         "uuid": "2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa"
       }
     ],
-    "used_designators": "#PWR17,#PWR45,T1,J11,J18,J23",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
