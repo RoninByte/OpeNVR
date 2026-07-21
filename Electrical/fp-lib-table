@@ -12,4 +12,5 @@
 	(lib (name "eth transformer") (type "KiCad") (uri "C:/Users/Sayf/Downloads/New folder/KiCad") (options "") (descr ""))
 	(lib (name "new eth") (type "KiCad") (uri "C:/Users/Sayf/Downloads/new eth/KiCad") (options "") (descr ""))
 	(lib (name "mag eth") (type "KiCad") (uri "C:/Users/Sayf/Downloads/KiCADv6/footprints.pretty") (options "") (descr ""))
+	(lib (name "1v ldo") (type "KiCad") (uri "C:/Users/Sayf/Downloads/ADP1715ARMZ_R7/KiCADv6/footprints.pretty") (options "") (descr ""))
 )

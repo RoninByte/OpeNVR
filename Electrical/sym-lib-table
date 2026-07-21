@@ -1,0 +1,10 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "ethernet") (type "KiCad") (uri "/home/ronin/Downloads/LIB_43860-0010/43860-0010/KiCad") (options "") (descr ""))
+	(lib (name "phoenix") (type "KiCad") (uri "C:/Users/Sayf/Downloads/1099280") (options "") (descr ""))
+	(lib (name "amp eth") (type "KiCad") (uri "C:/Users/Sayf/Downloads/RJE3C1886401") (options "") (descr ""))
+	(lib (name "eth transformer") (type "KiCad") (uri "C:/Users/Sayf/Downloads/New folder/KiCad") (options "") (descr ""))
+	(lib (name "new eth") (type "KiCad") (uri "C:/Users/Sayf/Downloads/new eth/KiCad") (options "") (descr ""))
+	(lib (name "mag eth") (type "KiCad") (uri "C:/Users/Sayf/Downloads/KiCADv6") (options "") (descr ""))
+	(lib (name "1v ldo") (type "KiCad") (uri "C:/Users/Sayf/Downloads/ADP1715ARMZ_R7/KiCADv6") (options "") (descr ""))
+)

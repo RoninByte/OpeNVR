@@ -8436,17 +8436,6 @@
 		)
 		(uuid "131457f0-727d-4392-be54-0f39c5e979eb")
 	)
-	(hierarchical_label "~{PEWAKE}"
-		(shape output)
-		(at 369.57 76.2 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "13bd943e-efd4-4adb-ab76-24d17d303199")
-	)
 	(hierarchical_label "USB_2_P2-"
 		(shape bidirectional)
 		(at 238.76 182.88 180)
@@ -9326,6 +9315,17 @@
 			(justify right)
 		)
 		(uuid "fb2548e3-15e0-4662-a443-6afbf85ec951")
+	)
+	(hierarchical_label "~{PEWAKE}"
+		(shape output)
+		(at 369.57 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fea81470-c647-405b-88ee-b1a75b795837")
 	)
 	(hierarchical_label "REFCLK2-"
 		(shape output)
