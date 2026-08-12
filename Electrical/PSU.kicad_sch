@@ -4246,25 +4246,14 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:HT75xx-1-SOT89"
+		(symbol "Regulator_Linear:NCP718xSN300"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
-				(at -5.08 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "HT75xx-1-SOT89"
-				(at 0 6.35 0)
+				(at -3.81 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -4273,20 +4262,18 @@
 					)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
-				(at 0 8.255 0)
+			(property "Value" "NCP718xSN300"
+				(at 6.35 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
-				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
 				)
 			)
-			(property "Datasheet" "https://www.holtek.com/documents/10179/116711/HT75xx-1v250.pdf"
-				(at 0 2.54 0)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+				(at 0 8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -4296,7 +4283,18 @@
 					)
 				)
 			)
-			(property "Description" "100mA Low Dropout Voltage Regulator, Fixed Output, SOT89"
+			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NCP718-D.PDF"
+				(at 0 12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "300-mA, Wide Input Voltage, Low-IQ LDO, 3.0V, SOT-23"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4307,7 +4305,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "100mA LDO Regulator Fixed Positive"
+			(property "ki_keywords" "Single Output LDO Wide Input"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4318,7 +4316,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "SOT?89*"
+			(property "ki_fp_filters" "SOT?23*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4329,10 +4327,10 @@
 					)
 				)
 			)
-			(symbol "HT75xx-1-SOT89_0_1"
+			(symbol "NCP718xSN300_0_1"
 				(rectangle
-					(start -5.08 5.08)
-					(end 5.08 -2.54)
+					(start -5.08 -5.08)
+					(end 5.08 5.08)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -4341,12 +4339,10 @@
 						(type background)
 					)
 				)
-			)
-			(symbol "HT75xx-1-SOT89_1_1"
 				(pin power_in line
-					(at 0 -5.08 90)
+					(at -7.62 2.54 0)
 					(length 2.54)
-					(name "GND"
+					(name "IN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4362,9 +4358,9 @@
 					)
 				)
 				(pin power_in line
-					(at -7.62 2.54 0)
+					(at 0 -7.62 90)
 					(length 2.54)
-					(name "VIN"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4379,10 +4375,10 @@
 						)
 					)
 				)
-				(pin power_out line
-					(at 7.62 2.54 180)
+				(pin input line
+					(at -7.62 0 0)
 					(length 2.54)
-					(name "VOUT"
+					(name "EN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4390,6 +4386,43 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 5.08 0 180)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6157,145 +6190,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+3.3V"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+3.3V"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+3.3V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+3.3V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+3V3"
 			(power global)
 			(pin_numbers
@@ -6804,145 +6698,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:VDC"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "VDC"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VDC\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "VDC_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VDC_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(text "AUTO Power ON Circuit\n"
 		(exclude_from_sim no)
@@ -7124,12 +6879,6 @@
 		(uuid "fc9aafd3-f72f-444a-a48e-fedcd6f49880")
 	)
 	(junction
-		(at 427.99 229.87)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0326274d-e15e-49b7-a6cd-5ee169f5c574")
-	)
-	(junction
 		(at 349.25 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7236,12 +6985,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2e1d9d29-1219-4d68-8734-5550468d1ee8")
-	)
-	(junction
-		(at 360.68 196.85)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "30ed49d4-975e-4406-ba2e-80249fdd6bb8")
 	)
 	(junction
 		(at 541.02 262.89)
@@ -7466,12 +7209,6 @@
 		(uuid "71780e41-034e-4440-8970-2f5fae590ddf")
 	)
 	(junction
-		(at 427.99 224.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "756456c2-2190-4f72-b310-026adf5146c4")
-	)
-	(junction
 		(at 339.09 229.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7610,6 +7347,12 @@
 		(uuid "9a6e1c09-757d-4044-ac80-e2dc9006c560")
 	)
 	(junction
+		(at 299.72 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9af160b5-e4d3-4b96-a087-44c164b038f1")
+	)
+	(junction
 		(at 246.38 274.32)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7632,6 +7375,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b1685bc6-cc2f-4df3-a6c5-9d98e00546c2")
+	)
+	(junction
+		(at 288.29 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b1b2388e-c572-477f-b3f2-0b9622be9a2e")
 	)
 	(junction
 		(at 295.91 377.19)
@@ -7704,12 +7453,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ca5e0cad-8695-47bf-b88b-2806a31d4b4e")
-	)
-	(junction
-		(at 458.47 224.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cc01dd74-2de0-457e-b2f1-4b6e4766119e")
 	)
 	(junction
 		(at 368.3 179.07)
@@ -8307,16 +8050,6 @@
 	)
 	(wire
 		(pts
-			(xy 453.39 224.79) (xy 458.47 224.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1716dc1f-7586-451b-aeef-fb3241114e3d")
-	)
-	(wire
-		(pts
 			(xy 134.62 82.55) (xy 134.62 86.36)
 		)
 		(stroke
@@ -8458,7 +8191,7 @@
 	)
 	(wire
 		(pts
-			(xy 284.48 53.34) (xy 292.1 53.34)
+			(xy 284.48 53.34) (xy 288.29 53.34)
 		)
 		(stroke
 			(width 0)
@@ -8689,16 +8422,6 @@
 			(type default)
 		)
 		(uuid "2cb22971-ba71-4ace-8945-b5e9434e0826")
-	)
-	(wire
-		(pts
-			(xy 458.47 222.25) (xy 458.47 224.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2cdee2f6-80b5-4370-a9b3-b2c0f69d5924")
 	)
 	(wire
 		(pts
@@ -9004,16 +8727,6 @@
 			(color 255 0 0 1)
 		)
 		(uuid "3deed63e-2a3a-474b-bd81-7156883ba552")
-	)
-	(wire
-		(pts
-			(xy 448.31 283.21) (xy 448.31 285.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3df458dd-5680-4e62-afae-ad23aa63ff56")
 	)
 	(wire
 		(pts
@@ -9353,6 +9066,16 @@
 	)
 	(wire
 		(pts
+			(xy 288.29 55.88) (xy 292.1 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "551caff5-3f54-4a13-8bfb-4d62654edc41")
+	)
+	(wire
+		(pts
 			(xy 246.38 292.1) (xy 246.38 297.18)
 		)
 		(stroke
@@ -9462,6 +9185,16 @@
 			(type default)
 		)
 		(uuid "5bf77856-b797-4311-b9c1-aff68acd3783")
+	)
+	(wire
+		(pts
+			(xy 356.87 191.77) (xy 359.41 191.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d2ea425-920f-4d73-b2dc-0944fe36917a")
 	)
 	(wire
 		(pts
@@ -9655,16 +9388,6 @@
 			(type default)
 		)
 		(uuid "68113896-90c9-48ce-b67c-4dfd1c12d20e")
-	)
-	(wire
-		(pts
-			(xy 427.99 222.25) (xy 427.99 224.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "68772c47-1488-489f-908f-2a3c3ddfd1ac")
 	)
 	(wire
 		(pts
@@ -10662,16 +10385,6 @@
 	)
 	(wire
 		(pts
-			(xy 351.79 196.85) (xy 360.68 196.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a89e5a44-f106-45fd-a8d9-3a6d9e2a06d8")
-	)
-	(wire
-		(pts
 			(xy 308.61 269.24) (xy 308.61 265.43)
 		)
 		(stroke
@@ -10723,6 +10436,16 @@
 	)
 	(wire
 		(pts
+			(xy 299.72 60.96) (xy 299.72 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abf49a0e-bbd7-4cdd-b5eb-98d4893501cf")
+	)
+	(wire
+		(pts
 			(xy 300.99 382.27) (xy 300.99 387.35)
 		)
 		(stroke
@@ -10770,16 +10493,6 @@
 			(type default)
 		)
 		(uuid "ae99ece0-d9b9-4475-a659-3e6609f2cc93")
-	)
-	(wire
-		(pts
-			(xy 427.99 224.79) (xy 445.77 224.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "af2d7e2a-5b5b-4997-ae16-4ead159a2c68")
 	)
 	(wire
 		(pts
@@ -11118,6 +10831,16 @@
 	)
 	(wire
 		(pts
+			(xy 299.72 63.5) (xy 299.72 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3363fc1-8725-4712-8be2-3021a79dca05")
+	)
+	(wire
+		(pts
 			(xy 488.95 240.03) (xy 490.22 240.03)
 		)
 		(stroke
@@ -11135,16 +10858,6 @@
 			(type default)
 		)
 		(uuid "c393ee50-a4c0-4457-9eed-094d4b55e364")
-	)
-	(wire
-		(pts
-			(xy 299.72 60.96) (xy 299.72 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c4ee93bd-59f6-4164-95b0-c4261e73ffd3")
 	)
 	(wire
 		(pts
@@ -11359,16 +11072,6 @@
 	)
 	(wire
 		(pts
-			(xy 427.99 224.79) (xy 427.99 229.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d804be64-bd12-49c1-8d80-ce86cc2d6eb2")
-	)
-	(wire
-		(pts
 			(xy 412.75 173.99) (xy 414.02 173.99)
 		)
 		(stroke
@@ -11480,6 +11183,16 @@
 	)
 	(wire
 		(pts
+			(xy 288.29 53.34) (xy 292.1 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e050c5d6-47a2-4855-835b-07d9c0025c13")
+	)
+	(wire
+		(pts
 			(xy 452.12 156.21) (xy 448.31 156.21)
 		)
 		(stroke
@@ -11537,6 +11250,16 @@
 			(type default)
 		)
 		(uuid "e5c95a93-8a5c-4afb-a073-79e9f3c95392")
+	)
+	(wire
+		(pts
+			(xy 370.84 194.31) (xy 372.11 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5d125e5-68d5-4aca-8899-88b1fdef8eae")
 	)
 	(wire
 		(pts
@@ -11890,6 +11613,16 @@
 			(type default)
 		)
 		(uuid "fba660f1-ffa4-4c80-aa48-532cccad01c1")
+	)
+	(wire
+		(pts
+			(xy 288.29 53.34) (xy 288.29 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbe3d64f-cb02-4402-9eec-d302317b69af")
 	)
 	(wire
 		(pts
@@ -12924,7 +12657,7 @@
 				)
 			)
 		)
-		(property "Value" "P_GND"
+		(property "Value" "sic-gnd"
 			(at 408.94 191.7699 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13321,84 +13054,6 @@
 			(project "NVR"
 				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/b23aee49-27d1-466d-98e2-113ee657e42b"
 					(reference "R58")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 458.47 232.41 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "06fbb455-167a-4c53-93a1-abc51cee5a04")
-		(property "Reference" "#PWR096"
-			(at 458.47 238.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 458.47 237.49 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 458.47 232.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 458.47 232.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 458.47 232.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "321ad852-b395-4548-924a-ddf06f353fef")
-		)
-		(instances
-			(project "NVR"
-				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/b23aee49-27d1-466d-98e2-113ee657e42b"
-					(reference "#PWR096")
 					(unit 1)
 				)
 			)
@@ -14022,84 +13677,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 448.31 293.37 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0e86fce4-8d9f-4f70-acbb-6549fd509fbe")
-		(property "Reference" "#PWR090"
-			(at 448.31 299.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 448.31 298.45 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 448.31 293.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 448.31 293.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 448.31 293.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8b9d5632-096c-4cad-b004-92f7bb67a262")
-		)
-		(instances
-			(project "NVR"
-				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/b23aee49-27d1-466d-98e2-113ee657e42b"
-					(reference "#PWR090")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Diode:ESD9B5.0ST5G")
 		(at 254 288.29 90)
 		(unit 1)
@@ -14324,7 +13901,7 @@
 				)
 			)
 		)
-		(property "Value" "10K/1%"
+		(property "Value" "1.0K/1%"
 			(at 449.58 158.75 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14890,121 +14467,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Schottky")
-		(at 458.47 228.6 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "297b5046-a2f5-479f-ae34-8e53d0fa4658")
-		(property "Reference" "D24"
-			(at 461.01 227.0124 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "3V3 Izt=5mA"
-			(at 461.01 229.5524 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-923"
-			(at 458.47 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 458.47 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Schottky diode"
-			(at 458.47 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 458.47 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 458.47 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 458.47 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "449e8fab-74d2-41c2-b053-57a800d90ee5")
-		)
-		(pin "2"
-			(uuid "a419832c-583e-4b48-9506-af0351385965")
-		)
-		(instances
-			(project "NVR"
-				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/b23aee49-27d1-466d-98e2-113ee657e42b"
-					(reference "D24")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 134.62 52.07 180)
 		(unit 1)
@@ -15531,7 +14993,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 372.11 194.31 270)
+		(at 370.84 194.31 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15542,7 +15004,7 @@
 		(fields_autoplaced yes)
 		(uuid "31167d52-c34d-4391-98db-bf8615021541")
 		(property "Reference" "#PWR0234"
-			(at 365.76 194.31 0)
+			(at 364.49 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15552,8 +15014,8 @@
 				)
 			)
 		)
-		(property "Value" "P_GND"
-			(at 370.84 190.5 90)
+		(property "Value" "sic-gnd"
+			(at 369.57 190.5 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15563,7 +15025,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 372.11 194.31 0)
+			(at 370.84 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15574,7 +15036,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 372.11 194.31 0)
+			(at 370.84 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15585,7 +15047,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 372.11 194.31 0)
+			(at 370.84 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16199,84 +15661,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 458.47 222.25 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "39019966-10f9-40d2-a7a8-b7481291c35f")
-		(property "Reference" "#PWR095"
-			(at 458.47 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VPullup"
-			(at 458.47 217.17 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 458.47 222.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 458.47 222.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 458.47 222.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "755cee81-a8cc-46e6-b02f-d463ea3b33a2")
-		)
-		(instances
-			(project "NVR"
-				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/b23aee49-27d1-466d-98e2-113ee657e42b"
-					(reference "#PWR095")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 39.37 171.45 0)
 		(unit 1)
@@ -16422,7 +15806,7 @@
 				)
 			)
 		)
-		(property "Value" "A_GND"
+		(property "Value" "sic-gnd"
 			(at 455.93 156.2099 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17026,7 +16410,7 @@
 				)
 			)
 		)
-		(property "Value" "P_GND"
+		(property "Value" "sic-gnd"
 			(at 408.94 196.8499 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17200,154 +16584,6 @@
 			(project "NVR"
 				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/b23aee49-27d1-466d-98e2-113ee657e42b"
 					(reference "R55")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:HT75xx-1-SOT89")
-		(at 299.72 55.88 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4473187b-c6e5-4f8c-84fe-a8377d5ed76a")
-		(property "Reference" "U13"
-			(at 299.72 45.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "HT7533"
-			(at 299.72 48.26 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
-			(at 299.72 47.625 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.holtek.com/documents/10179/116711/HT75xx-1v250.pdf"
-			(at 299.72 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "100mA Low Dropout Voltage Regulator, Fixed Output, SOT89"
-			(at 299.72 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C5296738"
-			(at 299.72 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "HT7533"
-			(at 299.72 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DDD Stock" "Yes"
-			(at 299.72 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "In Stock" "Yes"
-			(at 299.72 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" ""
-			(at 299.72 55.88 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part#" ""
-			(at 299.72 55.88 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "fd7cef93-18a9-4c03-a7c3-fb333ccc3d37")
-		)
-		(pin "2"
-			(uuid "81814d76-97a4-4740-9d61-4a778db067ee")
-		)
-		(pin "1"
-			(uuid "4c6ef4b2-c3fd-4372-a0b1-38860a43fa4f")
-		)
-		(instances
-			(project "NVR"
-				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/b23aee49-27d1-466d-98e2-113ee657e42b"
-					(reference "U13")
 					(unit 1)
 				)
 			)
@@ -18157,7 +17393,7 @@
 				)
 			)
 		)
-		(property "Value" "191K/1%"
+		(property "Value" "19.1K/1%"
 			(at 441.706 162.56 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19511,131 +18747,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 449.58 224.79 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "63a81915-5f48-4c55-b80c-1308ba50412b")
-		(property "Reference" "R53"
-			(at 450.088 227.076 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2.2K/1%"
-			(at 453.644 228.854 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 449.58 226.568 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 449.58 224.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 449.58 224.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "SCH_Show_Footprint" ""
-			(at 449.58 224.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 449.58 224.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 449.58 224.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 449.58 224.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2496a489-9f65-48d7-9f5e-c0781a8c7379")
-		)
-		(pin "2"
-			(uuid "fff3617b-293e-4980-a307-0d61656df570")
-		)
-		(instances
-			(project "NVR"
-				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/b23aee49-27d1-466d-98e2-113ee657e42b"
-					(reference "R53")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 166.37 339.09 0)
 		(unit 1)
@@ -19904,7 +19015,7 @@
 				)
 			)
 		)
-		(property "Value" "100K/1%"
+		(property "Value" "200K/1%"
 			(at 409.194 177.8 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20124,6 +19235,95 @@
 			(project "NVR"
 				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/b23aee49-27d1-466d-98e2-113ee657e42b"
 					(reference "C154")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:NCP718xSN300")
+		(at 299.72 55.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "695348ab-7ba7-4cf5-b388-106739b1a469")
+		(property "Reference" "U13"
+			(at 299.72 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NCP718xSN300"
+			(at 299.72 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 299.72 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NCP718-D.PDF"
+			(at 299.72 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "300-mA, Wide Input Voltage, Low-IQ LDO, 3.0V, SOT-23"
+			(at 299.72 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "730d0605-0fcd-4d46-ba76-cd3d7e48e78f")
+		)
+		(pin "4"
+			(uuid "b9c9c17e-8fab-478c-b1e4-459c84320e2e")
+		)
+		(pin "1"
+			(uuid "2bf21174-f4ff-4e18-9e61-1887a634a4de")
+		)
+		(pin "5"
+			(uuid "b71c67b1-c81d-4d74-8a3b-373c53791fdb")
+		)
+		(pin "3"
+			(uuid "eb0b55e1-2bc1-4994-b013-98016f279ed2")
+		)
+		(instances
+			(project "NVR"
+				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/b23aee49-27d1-466d-98e2-113ee657e42b"
+					(reference "U13")
 					(unit 1)
 				)
 			)
@@ -22127,7 +21327,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "84589e2e-7201-4836-89f8-28f587757de5")
 		(property "Reference" "#PWR0235"
 			(at 349.25 177.8 0)
@@ -22140,8 +21339,8 @@
 				)
 			)
 		)
-		(property "Value" "P_GND"
-			(at 351.79 172.7199 0)
+		(property "Value" "sic-gnd"
+			(at 351.028 175.514 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22845,7 +22044,7 @@
 				)
 			)
 		)
-		(property "Value" "P_GND"
+		(property "Value" "sic-gnd"
 			(at 370.84 165.1 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23141,129 +22340,6 @@
 			(project "NVR"
 				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/b23aee49-27d1-466d-98e2-113ee657e42b"
 					(reference "C75")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 448.31 289.56 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9638c9c0-8f13-4c13-9b7a-ff85806c18b4")
-		(property "Reference" "R51"
-			(at 441.96 290.83 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100K/1%"
-			(at 443.23 288.29 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Footprint" "A_HDJ_Library:R_0402_1005Metric"
-			(at 450.088 289.56 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 448.31 289.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 448.31 289.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "SCH_Show_Footprint" ""
-			(at 448.31 289.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 448.31 289.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 448.31 289.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 448.31 289.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "45a17dee-b229-4296-87ec-1afd4bd3f502")
-		)
-		(pin "2"
-			(uuid "7ca2a84e-97c1-4c06-821c-2d36f6d67538")
-		)
-		(instances
-			(project "NVR"
-				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/b23aee49-27d1-466d-98e2-113ee657e42b"
-					(reference "R51")
 					(unit 1)
 				)
 			)
@@ -25364,84 +24440,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VDC")
-		(at 427.99 222.25 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b17867ba-9140-4b7d-8289-28a85d8a3de5")
-		(property "Reference" "#PWR086"
-			(at 427.99 224.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VDC"
-			(at 427.99 217.17 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 427.99 222.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 427.99 222.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDC\""
-			(at 427.99 222.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "84fe06ad-c2f8-4ab4-bc6b-bcc881848a54")
-		)
-		(instances
-			(project "NVR"
-				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/b23aee49-27d1-466d-98e2-113ee657e42b"
-					(reference "#PWR086")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Transistor_FET:2N7002")
 		(at 445.77 331.47 0)
 		(unit 1)
@@ -25595,7 +24593,7 @@
 				)
 			)
 		)
-		(property "Value" "A_GND"
+		(property "Value" "sic-gnd"
 			(at 408.94 186.6899 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25920,7 +24918,7 @@
 				)
 			)
 		)
-		(property "Value" "P_GND"
+		(property "Value" "sic-gnd"
 			(at 370.84 167.64 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26418,85 +25416,6 @@
 			(project "NVR"
 				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/b23aee49-27d1-466d-98e2-113ee657e42b"
 					(reference "#PWR0200")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 351.79 196.85 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c3fff0fe-c372-4a93-b874-8c90e361ce95")
-		(property "Reference" "#PWR0240"
-			(at 355.6 196.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 347.98 196.8499 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 351.79 196.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 351.79 196.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 351.79 196.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e8d7942e-5951-4775-b64d-b057fc363f48")
-		)
-		(instances
-			(project "NVR"
-				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/b23aee49-27d1-466d-98e2-113ee657e42b"
-					(reference "#PWR0240")
 					(unit 1)
 				)
 			)
@@ -27078,6 +25997,84 @@
 			(project "NVR"
 				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/b23aee49-27d1-466d-98e2-113ee657e42b"
 					(reference "D21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 499.11 200.66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cc162f64-fcb0-4e56-9d6f-8eb929527046")
+		(property "Reference" "#PWR0194"
+			(at 499.11 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VPullup"
+			(at 499.11 195.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 499.11 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 499.11 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 499.11 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "93e7bd67-8743-4402-bd09-6e01e11703a8")
+		)
+		(instances
+			(project "NVR"
+				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/b23aee49-27d1-466d-98e2-113ee657e42b"
+					(reference "#PWR0194")
 					(unit 1)
 				)
 			)
@@ -29942,7 +28939,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 359.41 191.77 270)
+		(at 356.87 191.77 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -29953,7 +28950,7 @@
 		(fields_autoplaced yes)
 		(uuid "f7879550-2c2e-464f-81f3-f3980747b667")
 		(property "Reference" "#PWR0241"
-			(at 353.06 191.77 0)
+			(at 350.52 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29963,8 +28960,8 @@
 				)
 			)
 		)
-		(property "Value" "P_GND"
-			(at 358.14 187.96 90)
+		(property "Value" "sic-gnd"
+			(at 355.6 187.96 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -29974,7 +28971,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 359.41 191.77 0)
+			(at 356.87 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29985,7 +28982,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 359.41 191.77 0)
+			(at 356.87 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29996,7 +28993,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 359.41 191.77 0)
+			(at 356.87 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
